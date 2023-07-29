@@ -25,26 +25,26 @@ public class Fibonnacci {
     }
 
     public static void main(String[] args) {
-        Boolean run;
         Scanner sc = new Scanner(System.in);
         int input;
 
         do {
-            System.out.println("Qual termo da sequência de Fibonnacci deseja obter ?");
+            System.out.println("Qual termo da sequência de Fibonnacci deseja obter ? (Para sair digite -1)");
             if (sc.hasNextInt()) {
                 input = sc.nextInt();
-                if (input < 0) {
+                if (input == -1) {
+                    break;
+                } else if (input < 0) {
                     System.out.println("Você deve inserir um número maior ou igual a 0");
                 } else {
                     System.out.println("Resultado da solução linear: " + linear_solution(input));
                     System.out.println("Resultado da solução recursiva: " + recursive_solution(input));
                 }
             } else {
+                sc.next();
                 System.out.println("Por favor, insira um número maior ou igual a 0");
             }
-            System.out.println("0 - Sair\n1 - Continuar");
-            run = !sc.next().equals("0");
-        } while (run);
+        } while (true);
         sc.close();
     }
 }
