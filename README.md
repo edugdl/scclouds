@@ -27,7 +27,7 @@ Antes de comentar sobre as soluções em geral, gostaria de explicar a divisibil
 Um número qualquer pode ser escrito como infinitas multiplicações de dois números no conjunto dos reais (n•m; n,m e R). Por exemplo, o primeiro número primo, 2, pode ser escrito como 1•2, 3•0.66666..., 1000 * 0,002, entre outras infinitas combinações.
 Porém o que define ele ser primo, é que existe um único par de multiplicações entre dois números naturais que resultam nele mesmo (n•m; n,m e N) = (1•n, n•1). Dessa maneira, ao invés de testar a divisibilidade por todos os números anteriores, é
 necessário verificarmos somente a parte "baixa" do produto. Pensando mais afundo sobre o assunto, podemos definir um número limite, onde a partir dele, não precisariamos testar mais nenhum outro número. Vamos usar como teste o número 49. Seus 
-únicos divisores são 1, 7 e 49. Se testarmos qualquer número acima de 7, como 8 por exemplo, seu par seria 49/8 = 6,125, ou seja, conforme vamos crescendo os divisores, seus respectivos pares já foram testados, ou não são naturais. Dessa forma, 
+únicos divisores são 1, 7 e 49. Se testarmos qualquer número acima de 7, como 8 por exemplo, seu par seria 49/8 = 6,125, ou seja, conforme vamos crescendo os divisores, seus respectivos pares ou já foram testados, ou não são naturais. Dessa forma, 
 o maior par possível é sua raíz quadrada * raíz quadrada. Assim, qualquer teste de divisores após sua raíz, não é necessário. A fim de reduzir ainda mais os divisores, podemos eliminar os números não primos. Todo número não primo pode ser formado pelo produto
 de um número primo * um número natural. Dessa forma, só é necessário testar a divisão com números primos menores ou iguais a sua raíz quadrada.
 
